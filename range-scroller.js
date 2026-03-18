@@ -1,16 +1,20 @@
 const rangeScroller = document.querySelector('#range-scroller')
 const output = document.querySelector('output')
+const layoutContainer = document.querySelector('.layout-container')
 
 setupFixedDefault()
 
-rangeScroller.addEventListener('change', (e) => {
+rangeScroller.addEventListener('input', (e) => {
   let currentSize = e.target.value // for the layout container layout width
   output.textContent = currentSize
+  layoutContainer.style.width = `${currentSize}px`
 })
 
 
 function setupFixedDefault() {
-  rangeScroller.value = 650
+  let defaultValue = 650
+  rangeScroller.value = defaultValue
   output.textContent = rangeScroller.value
+  layoutContainer.style.width = `${defaultValue}px`
 }
 
