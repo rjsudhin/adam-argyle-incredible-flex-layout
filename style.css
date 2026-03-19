@@ -30,6 +30,7 @@ form .row {
   gap: .8rem;
 }
 
+
 form .row:nth-child(1){
   flex: 2 1 120px;
 }
@@ -38,7 +39,20 @@ form .row:nth-child(2) {
   flex: 2 1 120px;
 }
 
+form .row input {
+  height: 35px;
+  padding-left: .7rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid green;
+  margin-bottom: 1rem;
+}
+
 form button[type='submit'] {
   display: block;
   flex: 1 1 40px;
+  min-width: 80px;
+  height: 35px;
+  align-self: flex-end;
 }
