@@ -14,3 +14,31 @@ body {
 .layout-container {
   border: 1px solid black;
 }
+
+form {
+  width: 100%;
+  border: 2px solid green;
+  display: flex;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+form .row {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+form .row:nth-child(1){
+  flex: 2 1 120px;
+}
+
+form .row:nth-child(2) {
+  flex: 2 1 120px;
+}
+
+form button[type='submit'] {
+  display: block;
+  flex: 1 1 40px;
+}
