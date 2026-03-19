@@ -10,6 +10,60 @@ body {
   min-height: 100vh;
 }
 
+.scroller-inputs {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 650px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.scroller-inputs #range-scroller {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  background: #ccc;
+}
+
+.scroller-inputs #range-scroller::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(228, 21, 228);
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+.scroller-inputs #range-scroller::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(228, 21, 228);
+  border-radius: 50%;
+  border: none;
+  transition: .2s ease-in-out;
+}
+
+.scroller-inputs #range-scroller::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 10px rgba(228, 21, 228, .1);
+}
+
+.scroller-inputs #range-scroller:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 13px rgb(228, 21, 228 .2);
+}
+
+.scroller-inputs #range-scroller::-moz-range-thumb:hover {
+  box-shadow: 0 0 0 13px rgb(228, 21, 228 .2);
+}
+
+
+
 
 .layout-container {
   border: 1px solid black;
