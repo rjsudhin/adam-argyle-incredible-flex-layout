@@ -66,12 +66,13 @@ body {
 
 
 .layout-container {
-  border: 1px solid black;
+  box-shadow: 1px 1px 8px 2px #252525b6;
+  margin: 1rem auto;
+  border-radius: .5rem;
 }
 
 form {
   width: 100%;
-  border: 2px solid green;
   display: flex;
   gap: 1.3rem;
   flex-wrap: wrap;
@@ -86,7 +87,7 @@ form .row {
 
 
 form .row:nth-child(1){
-  flex: 2 1 120px;
+  flex: 1 1 120px;
 }
 
 form .row:nth-child(2) {
@@ -99,8 +100,7 @@ form .row input {
   font-size: 1rem;
   border: none;
   outline: none;
-  border-bottom: 2px solid green;
-  margin-bottom: 1rem;
+  border-bottom: 2px solid rgb(228, 21, 228);
 }
 
 form button[type='submit'] {
@@ -109,4 +109,10 @@ form button[type='submit'] {
   min-width: 80px;
   height: 35px;
   align-self: flex-end;
+  background-color: rgb(199, 54, 199);
+  border: none;
+  border-radius: .5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
 }
